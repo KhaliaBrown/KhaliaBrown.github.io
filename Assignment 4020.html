@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html lang="en" xmlns="http://www.w3.org/1999/html">
+        <head>
+        <meta charset="UTF-8">
+        <title>ITEC 4020 ASSIGNMENT</title>
+</head>
+
+<style>
+body{
+background-color: #AAAFFF;
+}
+
+.header{
+background-color: #AAADBD;
+border-bottom: 1px solid Black;
+
+}
+
+table{
+  border:1px solid white;
+  background-color: #AAADBD;
+}
+
+.details{
+background-color: white;
+padding: 20px;
+margin: 0px;
+}
+
+#experienceh{
+margin: 20px;}
+
+h1{
+text-align: center;
+}
+
+.portfolio{
+length: 30px;
+width: 300px;
+
+}
+
+th, td {
+  text-align:left;
+  border:1px solid;
+  font-family: 'Times New Roman', serif;
+}
+
+.collapsible {
+position: relative;
+background-color: #AFBF99;
+width: 100%;
+padding: 20px;
+border: none;
+cursor: pointer;
+font-size: 22px;
+color: black;
+}
+</style>
+<body>
+<div id="header" class="header">
+    <h1>Khalia Brown</h1>
+    <section class="details"><p> I am a multi-faceted and results-focused individual
+        with a strong academic foundation and hands-on experience in the field of
+        information technology I am known for my excellent communication skills and have
+        years of experience in client services. Proficient with data management and analysis
+        as well as graphic designing.
+    </p>
+    </section>
+</div>
+
+<div id="education">
+    <section class="details">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                York University - Bachelor of Arts Hons., Information Technology (Expected 2025)
+            </li>
+            <li>
+                York University - Certificate in Digital Health (Expected 2025)
+            </li>
+        </ul>
+    </section>
+</div>
+
+<div id="workexperience">
+    <h2 id="experienceh">Experience</h2>
+    <table id="work">
+        <tr>
+            <th>Work Experience</th>
+            <th>Organization</th>
+            <th>Responsibilities</th>
+            <th>Start Date</th>
+            <th>End Period</th>
+        </tr>
+        <tr>
+            <th>Retail Sales Representative</th>
+            <th>Royal Ontario Museum</th>
+            <th>
+                <ul>
+                    <li>Troubleshooted and resolved minor technological issues</li>
+                    <li>Maintained visually appealing and well-organized store displays</li>
+                    <li>Handled customer purchases by processing a variety of products and payment methods</li>
+                    <li>Educated visitors about retail products and museum galleries while emphasizing the ROM's brand</li>
+                    <li>Promoted a seamless shopping experience by focusing on visitor engagement and customer satisfaction</li>
+
+                </ul>
+            </th>
+            <th>Aug. 2023</th>
+            <th>TBD</th>
+        </tr>
+        <tr>
+            <th>York International</th>
+            <th>International Student Ambassador</th>
+            <th>
+                <ul>
+                    <li>Contributed to conversion efforts in order to convince prospective students to attend York University</li>
+                    <li>Assisted in public relations initiatives to create an inviting environment for prospective international students</li>
+                    <li>Addressed general inquiries about York University and illuminated doubts regarding the admissions process for
+                        incoming international students</li>
+                </ul>
+            </th>
+            <th>April 17 2023</th>
+            <th>April 28 2023</th>
+        </tr>
+        <tr>
+            <th>York University</th>
+            <th>Class Representative</th>
+            <th>
+                <ul>
+                    <li>Planned class study sessions for students during major exams periods</li>
+                    <li>Assisted in public relations initiatives to create an inviting environment for prospective international students</li>
+                    <li>Addressed general inquiries about York University and illuminated doubts regarding the admissions process for
+                        incoming international students</li>
+                </ul>
+            </th>
+            <th>January 2023</th>
+            <th>April 2023</th>
+        </tr>
+    </table>
+</div>
+
+<div id="skills">
+    <h2>Other Qualifications</h2>
+    <button type="button" class="collapsible">Soft Skills</button>
+    <div class="details">
+        <ul>
+            <li>Communication</li>
+            <li>Decision-Making Skills</li>
+            <li>Flexible</li>
+            <li>Adaptible</li>
+            <li>Multitasker</li>
+            <li>Team focused</li>
+        </ul>
+
+    </div>
+
+    <button type="button" class="collapsible">Graphic Design Portfolio</button>
+    <div class="details">
+        <img class="portfolio" src="https://picallow.com/wp-content/uploads/2024/02/2024-02-19_65d2da8910128_Happy1.png">
+        <img class="portfolio" src="https://picallow.com/wp-content/uploads/2024/02/2024-02-18_65d1960343a61_SeaAnimalsClimateChangePoster.jpg">
+        <img class="portfolio"  src="https://picallow.com/wp-content/uploads/2024/02/2024-02-19_65d2ea0b40f70_1.png">
+        <img class="portfolio" src="https://picallow.com/wp-content/uploads/2024/02/2024-02-19_65d2ea0b40fb5_2.png">
+
+
+    </div>
+
+    <button type="button" class="collapsible">Certifications</button>
+    <div class="details">
+        <ul><li>SmartServe</li>
+            <li>The Health Effects Of Climate Change</li>
+            <li>Epidemics I (Hong Kong University)</li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <a href="https://drive.google.com/file/d/1FC9yLuEZ7P7O386kyJRXzDCkrZ92hQZg/view?usp=drive_link" download> <h5>Download My Full Resume Here</h5> </a>
+    <a href="mailto: khaliab@my.yorku.ca"><h5>Contact me here</h5></a>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
